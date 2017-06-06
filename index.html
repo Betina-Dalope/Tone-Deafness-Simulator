@@ -10,7 +10,7 @@
 	<script src="js/effects.js"></script>
 	<script src="js/pingpong.js"></script>
 	<script src="js/apollo.js"></script>
-	<script src="js/simulator.js"></script>
+	
 
 
 	<!-- Visualizer stuff -->
@@ -39,12 +39,17 @@
 	</style>
 
 	<link rel="stylesheet" href="styles/main.css">
+	<script src="js/simulator.js"></script>
 </head>
 <body>
 	<div>Input:
 		<select id="audioinput" onchange="changeInput(this.selectedIndex);">
 			<option>default (selection not supported)</option>
 		</select>
+	</div>
+
+	<div id="simulator">
+		<div class="initialize">Begin Simulation</div>
 	</div>
 
 	<div id="arranger">

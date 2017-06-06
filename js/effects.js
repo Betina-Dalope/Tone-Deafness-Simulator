@@ -393,6 +393,7 @@ function changeEffect() {
         default:
             break;
     }
+    simulator.init();
     audioInput.connect( currentEffectNode );
 }
 
