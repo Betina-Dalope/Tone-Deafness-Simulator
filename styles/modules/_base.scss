@@ -1,3 +1,30 @@
 #arranger {
-	//display: none;
+	display: none;
+}
+
+#simulator {
+	display: table;
+	border-spacing: 20px;
+    border-collapse: separate;
+    margin: 10% auto 0;
+	.btn {
+		cursor: pointer;
+		height: 60px;
+		width: 200px;
+		background: blue;
+		display: inline-block;
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		&:before {
+			content: "Start ";
+		}
+		&.on {
+			background: red;
+			&:before {
+				content: "Stop ";
+			}
+		}
+
+	}
 }
